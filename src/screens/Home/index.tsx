@@ -44,7 +44,7 @@ export function Home() {
   function handleFilterLoginData() {
     // Filter results inside data, save with setSearchListData
     const filteredData = searchListData.filter( data => {
-      const isValid = data.service_name.toLowerCase().Includes(searchText.toLowerCase)
+      const isValid = data.service_name.toLowerCase().includes(searchText.toLowerCase());
       if(isValid){
         return data;
       }
@@ -71,8 +71,8 @@ export function Home() {
     <>
       <Header
         user={{
-          name: 'Rocketseat',
-          avatar_url: 'https://i.ibb.co/ZmFHZDM/rocketseat.jpg'
+          name: 'rodolfo',
+          avatar_url: 'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
         }}
       />
       <Container>
